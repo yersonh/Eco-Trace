@@ -165,3 +165,11 @@
 .leaf-3 { left: 55%; animation-delay: 3.9s;  font-size: 30px; }
 .leaf-4 { left: 70%; animation-delay: 5.2s;  font-size: 34px; }
 .leaf-5 { left: 85%; animation-delay: 6.5s;  font-size: 38px; }
+
+/* ── Print styles for QR admin page ── */
+@media print {
+  body > * { display: none; }
+  #root > * { display: none; }
+  #root .print\:hidden { display: none !important; }
+  @page { margin: 1cm; }
+}

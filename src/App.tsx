@@ -12,6 +12,7 @@ import ForgotPassword from "./pages/ForgotPassword.tsx";
 import ResetPassword from "./pages/ResetPassword.tsx";
 import Dashboard from "./pages/Dashboard.tsx";
 import RecyclarPage from "./pages/RecyclarPage.tsx";
+import QrAdminPage from "./pages/QrAdminPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
               }
             />
             <Route path="/reciclar" element={<RecyclarPage />} />
+            <Route path="/qr-admin" element={<QrAdminPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

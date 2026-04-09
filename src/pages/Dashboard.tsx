@@ -102,12 +102,20 @@ const Dashboard = () => {
             ))}
           </div>
 
-          <Link
-            to="/reciclar"
-            className="mt-4 flex items-center justify-center gap-2 w-full py-3 rounded-2xl bg-primary-foreground/20 hover:bg-primary-foreground/30 transition-colors font-semibold text-sm"
-          >
-            <QrCode size={18} /> Registrar reciclaje (escanea QR en la caneca)
-          </Link>
+          <div className="mt-4 flex flex-col sm:flex-row gap-2">
+            <Link
+              to="/reciclar"
+              className="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl bg-primary-foreground/20 hover:bg-primary-foreground/30 transition-colors font-semibold text-sm"
+            >
+              <QrCode size={18} /> Registrar reciclaje
+            </Link>
+            <Link
+              to="/qr-admin"
+              className="flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors font-semibold text-sm"
+            >
+              <QrCode size={16} /> Generar QR
+            </Link>
+          </div>
         </section>
 
         {/* ── Historial ── */}
